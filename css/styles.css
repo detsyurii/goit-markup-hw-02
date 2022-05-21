@@ -1,10 +1,11 @@
 :root {
     --main-text-color: #212121;
     --second-text-color: #757575;
+    --white-text-color: #FFFFFF;
     --accent-color: #2196F3;
     --main-background-color: #FFFFFF;
     --section-background-color: #F5F4FA;
-    --footer-background-color: #2F303A;
+    --dark-background-color: #2F303A;
 }
 
 body{
@@ -34,6 +35,11 @@ font-family: "Roboto", sans-serif;
 .header-logo > span{
     color: var(--accent-color);
 }
+
+.header .link.current{
+    color: var(--accent-color);
+}
+
 
 .header-list a{
     font-weight: 500;
@@ -69,11 +75,11 @@ font-family: "Roboto", sans-serif;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white-text-color);
 }
 
 .hero-content{
-    background-color: rgb(61, 61, 61);
+    background-color: var(--dark-background-color);
 }
 
 .hero-button{
@@ -82,9 +88,14 @@ font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-text-color);
     background-color: var(--accent-color);
     cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+background-color: #188CE8;
 }
 
 /* Benefits */
@@ -115,6 +126,9 @@ color: var(--main-text-color);
 }
 
 /* Team */
+.team{
+background-color: var(--section-background-color);
+}
 
 .team-title{
 font-size: 36px;
@@ -141,7 +155,7 @@ color: var(--second-text-color);
 /* Footer */
 
 .footer{
-    background-color: var(--footer-background-color);
+    background-color: var(--dark-background-color);
 }
 
 .footer-logo{
@@ -157,7 +171,7 @@ letter-spacing: 0.03em;
 }
 
 .footer-logo-right{
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
 
 .adress {
@@ -165,7 +179,7 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #FFFFFF;
+color: var(--white-text-color);
 }
 
 .footer-contacts{
@@ -201,7 +215,7 @@ cursor: pointer;
 }
 
 .portfolio-button:hover{
-color: #FFFFFF;
+color: var(--white-text-color);
 background-color: var(--accent-color);
 }
 
